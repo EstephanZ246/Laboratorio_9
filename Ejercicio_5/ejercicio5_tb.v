@@ -18,36 +18,36 @@ initial begin
 
  entrada =7'b1111110 ;
 
-#10 entrada =7'b0000111 ;
-#10 entrada =7'b0000001 ;
-#10 entrada =7'b0001111 ;
+#10 entrada =7'b??????1 ;
+#10 entrada =7'b??????1 ;
+#10 entrada =7'b00011?1 ;
 #10 entrada =7'b0001011 ;
-#10 entrada =7'b0010111 ;
-#10 entrada =7'b0011001 ;
-#10 entrada =7'b0100101 ;
-#10 entrada =7'b0101111 ;
-#10 entrada =7'b0110001 ;
-#10 entrada =7'b0111111 ;
-#10 entrada =7'b1000111 ;
-#10 entrada =7'b1000101 ;
-#10 entrada =7'b1001011 ;
-#10 entrada =7'b1001101 ;
-#10 entrada =7'b1010101 ;
-#10 entrada =7'b1011111 ;
-#10 entrada =7'b1100011 ;
-#10 entrada =7'b1101001 ;
-#10 entrada =7'b1110111 ;
-#10 entrada =7'b1111111 ;
+#10 entrada =7'b0010??1 ;
+#10 entrada =7'b0011??1 ;
+#10 entrada =7'b0100??1 ;
+#10 entrada =7'b0101??1 ;
+#10 entrada =7'b0110??1 ;
+#10 entrada =7'b0111??1 ;
+#10 entrada =7'b1000?11 ;
+#10 entrada =7'b1000?01 ;
+#10 entrada =7'b1001?11 ;
+#10 entrada =7'b1001?01 ;
+#10 entrada =7'b1010??1 ;
+#10 entrada =7'b1011??1 ;
+#10 entrada =7'b1100??1 ;
+#10 entrada =7'b1101??1 ;
+#10 entrada =7'b1110??1 ;
+#10 entrada =7'b1111??1 ;
 
 
  #10 $finish;
 end
 
 
-//  initial begin
-//   $dumpfile("ejercicio5_tb.vcd");
-  //  $dumpvars(0,ROM_tb);
-  //end
+  initial begin
+  $dumpfile("ejercicio5_tb.vcd");
+    $dumpvars(0,ROM_tb);
+  end
 
 
 endmodule
