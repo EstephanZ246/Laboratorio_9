@@ -6,7 +6,7 @@ reg [12:0] salida;
 
 always @(entrada)
 begin
-  case (entrada)
+  casez (entrada)
     7'b??????0 : salida <= 13'b1000000001000;
     7'b00001?1 : salida <= 13'b0100000001000;
     7'b00000?1 : salida <= 13'b1000000001000;
