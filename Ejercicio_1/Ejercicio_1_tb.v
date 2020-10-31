@@ -157,9 +157,9 @@ initial begin
       end
 
 
-//  initial begin
-  // $dumpfile("Ejercicio_1_tb.vcd");
-  //  $dumpvars(0,flipflopD_tb);
-  //end
+  initial begin
+   $dumpfile("Ejercicio_1_tb.vcd");
+    $dumpvars(0,flipflopD_tb);
+  end
 
 endmodule
