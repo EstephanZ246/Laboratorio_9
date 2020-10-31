@@ -7,7 +7,7 @@ module FFD(input wire clk, reset, enable, D, output reg Q);
       else if (enable) Q <= D;
       else Q <= Q;
     end
-
+    
 endmodule
 
 

@@ -152,7 +152,7 @@ initial begin
 
 
 
-      #100 $finish;
+      #1 $finish;
 
       end
 
