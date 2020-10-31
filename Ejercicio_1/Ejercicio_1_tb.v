@@ -21,13 +21,13 @@ initial begin
    #1 $display(" ");
    $display(" ");
    $display("flipflop tipo D 1 bit");
-   $display("clk Reset Enable| D Q");
+   $display("clk Reset Enable  D Q");
    $display("________________|_____");
    $monitor(" %b    %b     %b      %b %b  ", clk, reset, enable ,D ,Q);
    end
 
    always
-   #5 clk = ~clk;
+   #1 clk = ~clk;
 
    initial begin
  clk = 0;
@@ -54,10 +54,10 @@ initial begin
   end
 
   initial begin
-     #20 $display(" ");
+     #10 $display(" ");
      $display(" ");
      $display("flipflop tipo D 2 bits");
-     $display("clk Reset Enable| D Q");
+     $display("clk Reset Enable  D   Q");
      $display("________________|_____");
      $monitor(" %b    %b     %b      %b %b  ", clk1, reset1, enable1 ,D1 ,Q1);
      end
@@ -66,10 +66,10 @@ initial begin
      #10 clk1 = ~clk1;
 
      initial begin
-    clk1 = 0;
-    enable1 = 0;
-    reset1= 1;
-    D1 = 2'b00;
+     clk1 = 0;
+     enable1 = 0;
+     reset1= 1;
+     D1 = 2'b00;
       /////////////////////
     #10 enable1 = 1;
     #10reset1 = 1;
@@ -99,69 +99,67 @@ initial begin
     #10   reset1 = 1;
     #10  D1 = 2'b11;
 
-
-
-    #50 $finish;
-
     end
 
 
+
+
     initial begin
-       #20 $display(" ");
+       #200 $display(" ");
        $display(" ");
        $display("flipflop tipo D 4 bits");
-       $display("clk Reset Enable| D Q");
-       $display("________________|_____");
+       $display("clk Reset Enable  D      Q");
+       $display("________________|___________");
        $monitor(" %b    %b     %b      %b %b  ", clk2, reset2, enable2 ,D2 ,Q2);
        end
 
        always
-       #10 clk2 = ~clk2;
+       #20 clk2 = ~clk2;
 
        initial begin
-      clk2 = 0;
-      enable2 = 0;
-      reset2= 1;
-      D2 = 2'b0000;
+       clk2 = 0;
+       enable2 = 0;
+       reset2= 1;
+       D2 = 2'b0000;
         /////////////////////
       #20 enable2 = 1;
       #20 reset2 = 1;
       #20 D2 = 2'b0001;
         /////////////////////
-      #10 enable2 = 1;
-      #10 reset2 = 0;
-      #10 D2 = 2'b1001;
+      #20 enable2 = 1;
+      #20 reset2 = 0;
+      #20 D2 = 2'b1001;
         ///////////////////
-      #10 enable2 = 1;
-      #10 reset2 = 0;
-      #10 D2 = 2'b0111;
+      #20 enable2 = 1;
+      #20 reset2 = 0;
+      #20 D2 = 2'b0111;
       /////////////////////
-      #10  enable2 = 1;
-      #10  reset2 = 0;
-      #10  D2 = 2'b1111;
+      #20  enable2 = 1;
+      #20  reset2 = 0;
+      #20  D2 = 2'b1111;
       /////////////////////
-      #10 enable2 = 1;
-      #10  reset2 = 0;
-      #10 D2 = 2'b1000;
+      #20 enable2 = 1;
+      #20  reset2 = 0;
+      #20 D2 = 2'b1000;
       /////////////////////
-      #10  enable2 = 1;
-      #10  reset2 = 0;
-      #10 D2 = 2'b010;
+      #20  enable2 = 1;
+      #20  reset2 = 0;
+      #20 D2 = 2'b010;
       /////////////////////
-      #10  enable2 = 1;
-      #10  reset2 = 1;
-      #10  D2 = 2'b000;
+      #20  enable2 = 1;
+      #20  reset2 = 1;
+      #20  D2 = 2'b000;
 
 
 
-      #50 $finish;
+      #100 $finish;
 
       end
 
 
 //  initial begin
-  //  $dumpfile("Ejercicio_1_tb.vcd");
+  // $dumpfile("Ejercicio_1_tb.vcd");
   //  $dumpvars(0,flipflopD_tb);
-//  end
+  //end
 
 endmodule
