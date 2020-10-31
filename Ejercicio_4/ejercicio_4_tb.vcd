@@ -1,0 +1,46 @@
+$date
+	Sat Oct 31 05:21:57 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module triestate_tb $end
+$var wire 4 ! salida [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 1 # enable $end
+$scope module t1 $end
+$var wire 4 $ a [3:0] $end
+$var wire 1 # enable $end
+$var wire 4 % salida [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz %
+b0 $
+0#
+b0 "
+bz !
+$end
+#10
+b111 !
+b111 %
+b111 "
+b111 $
+1#
+#20
+b101 !
+b101 %
+b101 "
+b101 $
+#30
+bz !
+bz %
+b111 "
+b111 $
+0#
+#31
