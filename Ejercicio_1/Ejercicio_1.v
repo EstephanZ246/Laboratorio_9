@@ -43,7 +43,7 @@ begin:flipflopD2bit
   end
 end
 endmodule
-/*
+
 module flipflopD4(clk,reset,enable,D,Q);
 
 input wire clk;
@@ -68,4 +68,3 @@ end
 
 
 endmodule
-*/
