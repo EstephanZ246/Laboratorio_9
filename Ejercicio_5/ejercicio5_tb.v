@@ -38,6 +38,17 @@ initial begin
 #10 entrada =7'b1101001 ;
 #10 entrada =7'b1110111 ;
 #10 entrada =7'b1111111 ;
+#10 entrada =7'b0101010 ;
+#10 entrada =7'b1000011 ;
+#10 entrada =7'b1101111 ;
+#10 entrada =7'b0001111 ;
+#10 entrada =7'b1110111 ;
+#10 entrada =7'b1100111 ;
+#10 entrada =7'b1000000 ;
+#10 entrada =7'b1001111 ;
+#10 entrada =7'b0101110 ;
+#10 entrada =7'b0000001 ;
+#10 entrada =7'b0010000 ;
 
 
  #10 $finish;
